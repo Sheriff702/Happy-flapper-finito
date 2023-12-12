@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hyper Flapper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>HYPER FLAPPER</h1>
+    <div class="gameContainer">
+      <div id="menuModal" class="modal">
+        <div class="modal-content">
+          <h2 id="heading">Welcome</h2>
+          <p class="userScore">Score: 0</p>
+          <div class="score-form">
+            <input type="text" id="playerName" placeholder="Enter your name" />
+            <button id="submitBtn">✓</button>
+          </div>
+          <p id="score-submitted" style="display: none">Score Submitted!</p>
+          <button id="playAgainBtn">Play</button>
+          <button id="leaderboardBtn">Leaderboard</button>
+        </div>
+      </div>
+
+      <canvas id="board"></canvas>
+    </div>
+
+    <div class="stick-figure left-stick">
+      <img src="assets/khadija.png" class="face" alt="" />
+      <div class="stick-figure-body"></div>
+      <div class="left-leg"></div>
+      <div class="right-leg"></div>
+      <div class="left-arm"></div>
+      <div class="right-arm"></div>
+    </div>
+
+    <div class="stick-figure right-stick">
+      <img src="assets/eskil.png" class="face" alt="" />
+      <div class="stick-figure-body"></div>
+      <div class="left-leg"></div>
+      <div class="right-leg"></div>
+      <div class="left-arm"></div>
+      <div class="right-arm"></div>
+    </div>
+    <audio
+      id="backgroundSound"
+      src="sounds/background.mp3"
+      preload="auto"
+    ></audio>
+    <audio id="jumpSound" src="sounds/jump.mp3" preload="auto"></audio>
+    <audio id="loseSound" src="sounds/lose.mp3" preload="auto"></audio>
+    <audio id="startSound" src="sounds/start.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
